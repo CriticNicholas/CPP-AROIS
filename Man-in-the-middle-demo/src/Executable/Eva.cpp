@@ -23,7 +23,7 @@ int main()
 
     while(true)
     {
-        Server.Write(Client.Read());
+        Server.Write("Pulse: 0 bpm; Temp: 0,600000 C; Signal Strength: 0%; Battery: 0%;");
         std::this_thread::sleep_for(std::chrono::seconds(1));
     }
 
