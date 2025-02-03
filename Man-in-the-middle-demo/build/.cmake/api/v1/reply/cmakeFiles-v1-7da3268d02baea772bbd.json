@@ -240,25 +240,6 @@
 			"path" : "C:/msys64/clang64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake"
 		},
 		{
-			"isExternal" : true,
-			"path" : "C:/Program Files/vcpkg/installed/x64-windows/share/openssl/vcpkg-cmake-wrapper.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/msys64/clang64/share/cmake/Modules/FindOpenSSL.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/msys64/clang64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
-		},
-		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "C:/msys64/clang64/share/cmake/Modules/FindPackageMessage.cmake"
-		},
-		{
 			"path" : "src/CMakeLists.txt"
 		}
 	],

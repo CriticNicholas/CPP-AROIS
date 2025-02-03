@@ -44,12 +44,6 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 8,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 1,
 				"line" : 14,
 				"parent" : 0
 			},
@@ -59,14 +53,8 @@
 			{
 				"command" : 3,
 				"file" : 2,
-				"line" : 7,
-				"parent" : 5
-			},
-			{
-				"command" : 3,
-				"file" : 2,
 				"line" : 9,
-				"parent" : 5
+				"parent" : 4
 			},
 			{
 				"command" : 3,
@@ -88,21 +76,12 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
-					"path" : "D:/CPP-AROlS/Man-in-the-middle-demo/OPENSSL_INCLUDE_DIR"
-				},
-				{
-					"backtrace" : 7,
+					"backtrace" : 5,
 					"path" : "D:/CPP-AROlS/Man-in-the-middle-demo/include/asio/asio/include"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 6,
 					"path" : "D:/CPP-AROlS/Man-in-the-middle-demo/src/Interface"
-				},
-				{
-					"backtrace" : 3,
-					"isSystem" : true,
-					"path" : "C:/Program Files/vcpkg/installed/x64-windows/include"
 				}
 			],
 			"language" : "CXX",
@@ -127,21 +106,11 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "\"C:\\Program Files\\vcpkg\\installed\\x64-windows\\debug\\lib\\libssl.lib\"",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 3,
-				"fragment" : "\"C:\\Program Files\\vcpkg\\installed\\x64-windows\\debug\\lib\\libcrypto.lib\"",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 4,
 				"fragment" : "-lwsock32",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lws2_32",
 				"role" : "libraries"
 			},

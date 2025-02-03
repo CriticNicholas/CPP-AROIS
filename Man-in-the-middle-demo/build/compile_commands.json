@@ -1,19 +1,19 @@
 [
 {
   "directory": "D:/CPP-AROlS/Man-in-the-middle-demo/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe -ID:/CPP-AROlS/Man-in-the-middle-demo/OPENSSL_INCLUDE_DIR -ID:/CPP-AROlS/Man-in-the-middle-demo/include/asio/asio/include -ID:/CPP-AROlS/Man-in-the-middle-demo/src/Interface -isystem \"C:/Program Files/vcpkg/installed/x64-windows/include\" -g -o src\\CMakeFiles\\Server.dir\\Executable\\Server.cpp.obj -c D:\\CPP-AROlS\\Man-in-the-middle-demo\\src\\Executable\\Server.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe -ID:/CPP-AROlS/Man-in-the-middle-demo/include/asio/asio/include -ID:/CPP-AROlS/Man-in-the-middle-demo/src/Interface -g -o src\\CMakeFiles\\Server.dir\\Executable\\Server.cpp.obj -c D:\\CPP-AROlS\\Man-in-the-middle-demo\\src\\Executable\\Server.cpp",
   "file": "D:\\CPP-AROlS\\Man-in-the-middle-demo\\src\\Executable\\Server.cpp",
   "output": "src\\CMakeFiles\\Server.dir\\Executable\\Server.cpp.obj"
 },
 {
   "directory": "D:/CPP-AROlS/Man-in-the-middle-demo/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe -ID:/CPP-AROlS/Man-in-the-middle-demo/OPENSSL_INCLUDE_DIR -ID:/CPP-AROlS/Man-in-the-middle-demo/include/asio/asio/include -ID:/CPP-AROlS/Man-in-the-middle-demo/src/Interface -isystem \"C:/Program Files/vcpkg/installed/x64-windows/include\" -g -o src\\CMakeFiles\\Client.dir\\Executable\\Client.cpp.obj -c D:\\CPP-AROlS\\Man-in-the-middle-demo\\src\\Executable\\Client.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe -ID:/CPP-AROlS/Man-in-the-middle-demo/include/asio/asio/include -ID:/CPP-AROlS/Man-in-the-middle-demo/src/Interface -g -o src\\CMakeFiles\\Client.dir\\Executable\\Client.cpp.obj -c D:\\CPP-AROlS\\Man-in-the-middle-demo\\src\\Executable\\Client.cpp",
   "file": "D:\\CPP-AROlS\\Man-in-the-middle-demo\\src\\Executable\\Client.cpp",
   "output": "src\\CMakeFiles\\Client.dir\\Executable\\Client.cpp.obj"
 },
 {
   "directory": "D:/CPP-AROlS/Man-in-the-middle-demo/build",
-  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe -ID:/CPP-AROlS/Man-in-the-middle-demo/OPENSSL_INCLUDE_DIR -ID:/CPP-AROlS/Man-in-the-middle-demo/include/asio/asio/include -ID:/CPP-AROlS/Man-in-the-middle-demo/src/Interface -isystem \"C:/Program Files/vcpkg/installed/x64-windows/include\" -g -o src\\CMakeFiles\\Eva.dir\\Executable\\Eva.cpp.obj -c D:\\CPP-AROlS\\Man-in-the-middle-demo\\src\\Executable\\Eva.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\clang++.exe -ID:/CPP-AROlS/Man-in-the-middle-demo/include/asio/asio/include -ID:/CPP-AROlS/Man-in-the-middle-demo/src/Interface -g -o src\\CMakeFiles\\Eva.dir\\Executable\\Eva.cpp.obj -c D:\\CPP-AROlS\\Man-in-the-middle-demo\\src\\Executable\\Eva.cpp",
   "file": "D:\\CPP-AROlS\\Man-in-the-middle-demo\\src\\Executable\\Eva.cpp",
   "output": "src\\CMakeFiles\\Eva.dir\\Executable\\Eva.cpp.obj"
 }
