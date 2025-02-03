@@ -83,7 +83,6 @@ namespace Network
                     std::clog << "Warning: Socket is open" << std::endl;
                     return;
                 }
-
                 AsioSocket.connect(this->EndPoint);
             }
 

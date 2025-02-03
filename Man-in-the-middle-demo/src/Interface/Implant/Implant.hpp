@@ -73,6 +73,7 @@ namespace Implant
                 default:
                     break;
                 }
+                return "";
             }
     };
 }
