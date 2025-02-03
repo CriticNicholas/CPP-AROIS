@@ -1,7 +1,0 @@
-# ninja log v6
-9	2648	7603022075436002	src/CMakeFiles/Server.dir/Executable/Server.cpp.obj	88e98ebf16f5828f
-2648	3156	7603022101805263	src/Server.exe	6ecd8b8af4a64879
-16	2742	7603022075542337	src/CMakeFiles/Eva.dir/Executable/Eva.cpp.obj	c27ed505e9f393c9
-13	2670	7603022075436002	src/CMakeFiles/Client.dir/Executable/Client.cpp.obj	e012c6c47e43d59b
-2670	3164	7603022102076582	src/Client.exe	39ce8bf2dfe27614
-2742	3234	7603022102737764	src/Eva.exe	589b85b9e195934d
