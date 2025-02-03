@@ -5,8 +5,10 @@ int main()
     Network::Socket Socket("127.0.0.1", 2001);
 
     Socket.Host();
-
-    std::cout << Socket.Read() << std::endl;
+    for(int i = 0; i < 125; ++i)
+    {
+        std::cout << Socket.Read() << std::endl;
+    }
     
     Socket.Close();
 }
