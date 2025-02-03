@@ -29,6 +29,8 @@ namespace Network
                         return;
                     }
                     std::cerr << ErrorCode.message() << std::endl;
+
+                    AsyncConnect();
                 });
             }
 
@@ -47,6 +49,11 @@ namespace Network
 
             void AsyncWrite(std::string_view Data)
             {
+                if(!this->AsioSocket.is_open())
+                {
+                    std::clog << "Warning: Socket is not open" << std::endl;
+                    return;
+                }
                 AsioSocket.async_send(asio::buffer(Data), [&](asio::error_code ErrorCode, size_t BytesTransferred){
                     if(!ErrorCode)
                     {
@@ -58,6 +65,11 @@ namespace Network
 
             void AsyncRead(void*(Handler)(std::string* Data, asio::error_code ErrorCode, size_t BytesGot))
             {
+                if(!this->AsioSocket.is_open())
+                {
+                    std::clog << "Warning: Socket is not open" << std::endl;
+                    return;
+                }
                 asio::streambuf TempBuffer;
 
                 asio::async_read_until(this->AsioSocket, TempBuffer, '\0', [&](asio::error_code ErrorCode, size_t BytesGot){
@@ -83,7 +95,20 @@ namespace Network
                     std::clog << "Warning: Socket is open" << std::endl;
                     return;
                 }
-                AsioSocket.connect(this->EndPoint);
+                try
+                {
+                    AsioSocket.connect(this->EndPoint);
+                }
+                catch(const std::system_error& e)
+                {
+                    std::cerr << e.what() << '\n';
+
+                    this->AsioSocket.close();
+
+                    Connect();
+                }
+                
+
             }
 
             void Host()
@@ -101,15 +126,35 @@ namespace Network
 
             void Write(std::string_view Data)
             {
+                if(!this->AsioSocket.is_open())
+                {
+                    std::clog << "Warning: Socket is not open" << std::endl;
+                    return;
+                }
                 std::string StringData = Data.data();
 
                 StringData+='\0';
+                try
+                {
+                    AsioSocket.send(asio::buffer(StringData));
+                }
+                catch(const std::system_error& e)
+                {
+                    std::cerr << e.what() << '\n';
 
-                AsioSocket.send(asio::buffer(StringData));
+                    this->AsioSocket.close();
+                }
+                
+                
             }
 
             std::string Read()
             {
+                if(!this->AsioSocket.is_open())
+                {
+                    std::clog << "Warning: Socket is not open" << std::endl;
+                    return "";
+                }
                 asio::streambuf StreamBuffer;
                 asio::read_until(AsioSocket, StreamBuffer, '\0');
 
